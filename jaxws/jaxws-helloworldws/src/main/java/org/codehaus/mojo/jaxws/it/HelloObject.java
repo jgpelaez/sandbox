@@ -1,7 +1,10 @@
 package org.codehaus.mojo.jaxws.it;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 
+@XmlAccessorType(XmlAccessType.NONE)
 public class HelloObject {
 
 	String name1;
@@ -14,7 +17,7 @@ public class HelloObject {
 		this.name1 = name1;
 	}
 
-	@XmlElement
+//	@XmlElement
 	public String getName2() {
 		return name2;
 	}

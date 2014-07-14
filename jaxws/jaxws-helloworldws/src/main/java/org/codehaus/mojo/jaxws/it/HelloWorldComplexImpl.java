@@ -31,7 +31,7 @@ import javax.jws.WebService;
 public class HelloWorldComplexImpl {
 
 	@WebMethod()
-	public HelloObject helloWorld(HelloObject userName) {
+	public HelloObject helloWorldComplex(HelloObject userName) {
 		HelloObject helloObject = new HelloObject();
 		helloObject.setName1("name 1");
 		helloObject.setName2("name 2");
